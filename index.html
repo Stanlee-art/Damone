@@ -10,15 +10,19 @@
 
     <header>
         <div class="logo">Damone~</div>
-        <nav>
-            <ul>
-                <li><button class="nav-btn" data-section="food">Food</button></li>
-                <li><button class="nav-btn" data-section="beverages">Beverages</button></li>
-                <li><button class="nav-btn" data-section="order">Order Now</button></li>
-                <li><button class="nav-btn" data-section="catering">Catering</button></li>
-                <li><button class="nav-btn" data-section="contact">Contact</button></li>
-            </ul>
-        </nav>
+        <!-- 📝 Mobile Menu Toggle Button -->
+<button id="menuToggle">☰</button>
+
+<nav id="navMenu">
+    <ul>
+        <li><button class="nav-btn" data-section="food">Food</button></li>
+        <li><button class="nav-btn" data-section="beverages">Beverages</button></li>
+        <li><button class="nav-btn" data-section="order">Order Now</button></li>
+        <li><button class="nav-btn" data-section="catering">Catering</button></li>
+        <li><button class="nav-btn" data-section="contact">Contact</button></li>
+    </ul>
+</nav>
+      
         <input type="text" id="searchBar" placeholder="Search menu...">
         <button id="darkModeToggle">🌙 Dark Mode</button>
         <select id="languageSelect"onchange="changeLanguage()">
@@ -42,46 +46,79 @@
                 <div class="menu-item"><img src="images/download.jpeg" alt="kebab"><p>kebab</p><span>$7</span>
                     <p class="description">Minced meat, garlic, onions, cumin, coriander, chili, skewered & grilled.</p>
                     <!-- Rating Section -->
-    <div class="rating" data-category="appetizers" data-item="Appetizer Name">
-        ★★★★★
-    </div> 
+                    <div class="rating" data-item-id="kebab">
+                        <span data-value="1">★</span>
+                        <span data-value="2">★</span>
+                        <span data-value="3">★</span>
+                        <span data-value="4">★</span>
+                        <span data-value="5">★</span>
+                    </div>
+                  
     </div>
                 <div class="menu-item"><img src="images/images (1).jpeg" alt="bhajia"><p>bhajia</p><span>$6.99</span>
                     <p class="description">Sliced potatoes, deep-fried and coated with spiced gram flour.</p>
                     <!-- Rating Section -->
-    <div class="rating" data-category="appetizers" data-item="Appetizer Name">
-        ★★★★★
+                    <div class="rating" data-item-id="bhajia">
+                        <span data-value="1">★</span>
+                        <span data-value="2">★</span>
+                        <span data-value="3">★</span>
+                        <span data-value="4">★</span>
+                        <span data-value="5">★</span>
+                        
     </div>
      </div>
                 <div class="menu-item"><img src="images/images.jpeg" alt="Garlic Bread"><p>Garlic Bread</p><span>$5.99</span>
                     <p class="description">Toasted bread infused with garlic butter and fresh parsley.</p>
                 <!-- Rating Section -->
-    <div class="rating" data-category="appetizers" data-item="Appetizer Name">
-        ★★★★★
+                <div class="rating" data-item-id="Garlic Bread">
+                    <span data-value="1">★</span>
+                    <span data-value="2">★</span>
+                    <span data-value="3">★</span>
+                    <span data-value="4">★</span>
+                    <span data-value="5">★</span>
+            
     </div>
  </div>
              <div class="menu-item"><img src="images/download (1).jpeg" alt="Stuffed Mushrooms"><p>Stuffed Mushrooms</p><span>$8.49</span><p class="description">Mushrooms stuffed with cheese, garlic, and breadcrumbs, then baked.</p>
             <!-- Rating Section -->
-           <div class="rating" data-category="appetizers" data-item="Appetizer Name">
-          ★★★★★
+            <div class="rating" data-item-id="Stuffed Mushrooms">
+                <span data-value="1">★</span>
+                <span data-value="2">★</span>
+                <span data-value="3">★</span>
+                <span data-value="4">★</span>
+                <span data-value="5">★</span>
           </div>
            </div>
                 <div class="menu-item"><img src="images/mandazi-1-20.jpg" alt="mandazi"><p>mandazi</p><span>$6.49</span><p class="description">Fried dough infused with coconut milk and cardamom, served with tea.</p>
                     <!-- Rating Section -->
-                    <div class="rating" data-category="appetizers" data-item="Appetizer Name">
-                        ★★★★★
+                    <div class="rating" data-item-id="Mandazi">
+                        <span data-value="1">★</span>
+                        <span data-value="2">★</span>
+                        <span data-value="3">★</span>
+                        <span data-value="4">★</span>
+                        <span data-value="5">★</span>
+                    
                     </div>
                 </div>
                 <div class="menu-item"><img src="images/download (2).jpeg" alt="Chicken Wings"><p>Chicken Wings</p><span>$9.99</span><p class="description">Chicken wings marinated in a spicy sauce, deep-fried or grilled.</p>
                     <!-- Rating Section -->
-                    <div class="rating" data-category="appetizers" data-item="Appetizer Name">
-                        ★★★★★
+                    <div class="rating" data-item-id="Chicken Wings">
+                        <span data-value="1">★</span>
+                        <span data-value="2">★</span>
+                        <span data-value="3">★</span>
+                        <span data-value="4">★</span>
+                        <span data-value="5">★</span>
                     </div>
                 </div>
                 <div class="menu-item"><img src="images/download (3).jpeg" alt="Shrimp Cocktail"><p>Shrimp Cocktail</p><span>$10.99</span><p class="description">Fresh shrimp served chilled with tangy cocktail sauce.</p>
                     <!-- Rating Section -->
-                    <div class="rating" data-category="appetizers" data-item="Appetizer Name">
-                        ★★★★★
+                    <div class="rating" data-item-id="Shrimp Cocktail">
+                        <span data-value="1">★</span>
+                        <span data-value="2">★</span>
+                        <span data-value="3">★</span>
+                        <span data-value="4">★</span>
+                        <span data-value="5">★</span>
+                        
                     </div>
                 </div>
             </div>
@@ -90,64 +127,114 @@
             <div class="menu-items">
                 <div class="menu-item"><img src="images/download (4).jpeg" alt="nyama choma"><p>nyama choma</p><span>$15.99</span><p class="description">Grilled goat or beef meat, served with kachumbari and ugali.</p>
                     <!-- Rating Section -->
-                    <div class="rating" data-category="appetizers" data-item="Appetizer Name">
-                        ★★★★★
+                    <div class="rating" data-item-id="nyama choma">
+                        <span data-value="1">★</span>
+                        <span data-value="2">★</span>
+                        <span data-value="3">★</span>
+                        <span data-value="4">★</span>
+                        <span data-value="5">★</span>
                     </div>
                 </div>
                 <div class="menu-item"><img src="images/download (5).jpeg" alt="Steak and Fries"><p>Steak and Fries</p><span>$18.99</span>
                     <p class="description">Juicy steak grilled to perfection, served with crispy fries.</p> 
                 <!-- Rating Section -->
-               <div class="rating" data-category="appetizers" data-item="Appetizer Name">
-                 ★★★★★
+                <div class="rating" data-item-id="Steak and Fries">
+                    <span data-value="1">★</span>
+                    <span data-value="2">★</span>
+                    <span data-value="3">★</span>
+                    <span data-value="4">★</span>
+                    <span data-value="5">★</span>
+                    
                </div>
               </div>
                 <div class="menu-item"><img src="images/download (6).jpeg" alt="Pasta Alfredo"><p>Pasta Alfredo</p><span>$13.49</span><p class="description">Fettuccine pasta tossed in a rich Alfredo sauce with parmesan.</p>
                     <!-- Rating Section -->
-                    <div class="rating" data-category="appetizers" data-item="Appetizer Name">
-                        ★★★★★
+                    <div class="rating" data-item-id="Pasta Alfredo">
+                        <span data-value="1">★</span>
+                        <span data-value="2">★</span>
+                        <span data-value="3">★</span>
+                        <span data-value="4">★</span>
+                        <span data-value="5">★</span>
+               
                     </div>
                 </div>
                 <div class="menu-item"><img src="images/download (7).jpeg" alt="Chicken Parmesan"><p>Chicken Parmesan</p><span>$14.99</span><p class="description">Breaded chicken breast topped with marinara sauce and melted cheese.</p> 
                     <!-- Rating Section -->
-                    <div class="rating" data-category="appetizers" data-item="Appetizer Name">
-                        ★★★★★
+                    <div class="rating" data-item-id="Chicken Parmesan">
+                        <span data-value="1">★</span>
+                        <span data-value="2">★</span>
+                        <span data-value="3">★</span>
+                        <span data-value="4">★</span>
+                        <span data-value="5">★</span>
+               
                     </div>
                 </div>
                 <div class="menu-item"><img src="images/download (8).jpeg" alt="pilau"><p>pilau</p><span>$22.99</span><p class="description">Spiced rice cooked with beef or chicken, served with kachumbari.</p>
                     <!-- Rating Section -->
-                    <div class="rating" data-category="appetizers" data-item="Appetizer Name">
-                        ★★★★★
+                    <div class="rating" data-item-id="pilau">
+                        <span data-value="1">★</span>
+                        <span data-value="2">★</span>
+                        <span data-value="3">★</span>
+                        <span data-value="4">★</span>
+                        <span data-value="5">★</span>
+               
+                        
                     </div>
                 </div>
                 <div class="menu-item"><img src="images/download (10).jpeg" alt="Veggie Stir Fry"><p>Veggie Stir Fry</p><span>$11.99</span><p class="description">A mix of fresh vegetables stir-fried with soy sauce and ginger.</p>
                     <!-- Rating Section -->
-                    <div class="rating" data-category="appetizers" data-item="Appetizer Name">
-                        ★★★★★
+                    <div class="rating" data-item-id="Veggie Stir Fry">
+                        <span data-value="1">★</span>
+                        <span data-value="2">★</span>
+                        <span data-value="3">★</span>
+                        <span data-value="4">★</span>
+                        <span data-value="5">★</span>
+                        
                     </div>
                 </div>
                 <div class="menu-item"><img src="images/download (9).jpeg" alt="BBQ Ribs"><p>BBQ Ribs</p><span>$17.99</span><p class="description">Tender pork ribs glazed in BBQ sauce, slow-cooked to perfection.</p>
                     <!-- Rating Section -->
-                    <div class="rating" data-category="appetizers" data-item="Appetizer Name">
-                        ★★★★★
+                    <div class="rating" data-item-id="BBQ Ribs">
+                        <span data-value="1">★</span>
+                        <span data-value="2">★</span>
+                        <span data-value="3">★</span>
+                        <span data-value="4">★</span>
+                        <span data-value="5">★</span>
+                        
                     </div>
                 </div>
                 <div class="menu-item"><img src="images/download (11).jpeg" alt="Cheeseburger"><p>Cheeseburger</p><span>$10.99</span><p class="description">Classic cheeseburger with lettuce, tomato, cheese, and secret sauce.</p>
                     <!-- Rating Section -->
-                    <div class="rating" data-category="appetizers" data-item="Appetizer Name">
-                        ★★★★★
+                    <div class="rating" data-item-id="Cheeseburger">
+                        <span data-value="1">★</span>
+                        <span data-value="2">★</span>
+                        <span data-value="3">★</span>
+                        <span data-value="4">★</span>
+                        <span data-value="5">★</span>
+                        
                     </div>
                 </div>
                 <div class="menu-item"><img src="images/download (12).jpeg" alt="Sushi Platter"><p>Sushi Platter</p><span>$19.99</span><p class="description">Assorted sushi rolls with fresh fish, avocado, and rice.</p>
                     <!-- Rating Section -->
-                    <div class="rating" data-category="appetizers" data-item="Appetizer Name">
-                        ★★★★★
+                    <div class="rating" data-item-id="Sushi Platter">
+                        <span data-value="1">★</span>
+                        <span data-value="2">★</span>
+                        <span data-value="3">★</span>
+                        <span data-value="4">★</span>
+                        <span data-value="5">★</span>
+                        
                     </div>
                 </div>
                 <div class="menu-item"><img src="images/download (14).jpeg" alt="beef stew"><p>beef stew</p><span>$12.99</span>
                     <p class="description">Slow-cooked beef stew with potatoes, carrots, and a rich gravy.</p>
                     <!-- Rating Section -->
-                    <div class="rating" data-category="appetizers" data-item="Appetizer Name">
-                        ★★★★★
+                    <div class="rating" data-item-id="beef stew">
+                        <span data-value="1">★</span>
+                        <span data-value="2">★</span>
+                        <span data-value="3">★</span>
+                        <span data-value="4">★</span>
+                        <span data-value="5">★</span>
+                   
                     </div>
                 </div>
             </div>
@@ -156,32 +243,57 @@
             <div class="menu-items">
                 <div class="menu-item"><img src="images/download (13).jpeg"alt="Chocolate Cake"><p>Chocolate Cake</p><span>$6.49</span><p class="description">Rich and moist chocolate cake topped with a creamy ganache.</p>
                 <!-- Rating Section -->
-    <div class="rating" data-category="appetizers" data-item="Appetizer Name">
-        ★★★★★
-    </div>
-</div>
+                <div class="rating" data-item-id="Chocolate Cake">
+                    <span data-value="1">★</span>
+                    <span data-value="2">★</span>
+                    <span data-value="3">★</span>
+                    <span data-value="4">★</span>
+                    <span data-value="5">★</span>
+                 
+           </div>
+             </div>
                 <div class="menu-item"><img src="images/download (15).jpeg"alt="Cheesecake"><p>Cheesecake</p><span>$5.99</span><p class="description">Creamy cheesecake with a graham cracker crust and berry topping.</p>
                     <!-- Rating Section -->
-                    <div class="rating" data-category="appetizers" data-item="Appetizer Name">
-                        ★★★★★
+                    <div class="rating" data-item-id="Cheesecake">
+                        <span data-value="1">★</span>
+                        <span data-value="2">★</span>
+                        <span data-value="3">★</span>
+                        <span data-value="4">★</span>
+                        <span data-value="5">★</span>  
                     </div>
                 </div>
                 <div class="menu-item"><img src="images/download (18).jpeg" alt="Ice Cream Sundae"><p>Ice Cream Sundae</p><span>$4.99</span><p class="description">Vanilla ice cream topped with chocolate syrup and whipped cream.</p>
                 <!-- Rating Section -->
-    <div class="rating" data-category="appetizers" data-item="Appetizer Name">
-        ★★★★★
+                <div class="rating" data-item-id="Ice Cream Sundae">
+                    <span data-value="1">★</span>
+                    <span data-value="2">★</span>
+                    <span data-value="3">★</span>
+                    <span data-value="4">★</span>
+                    <span data-value="5">★</span>
+           
     </div>
 </div>
                 <div class="menu-item"><img src="images/download (16).jpeg" alt="Tiramisu"><p>Tiramisu</p><span>$6.99</span><p class="description">Classic Italian dessert with layers of espresso-soaked ladyfingers.</p>
                 <!-- Rating Section -->
-    <div class="rating" data-category="appetizers" data-item="Appetizer Name">
-        ★★★★★
+                <div class="rating" data-item-id="Tiramisu">
+                    <span data-value="1">★</span>
+                    <span data-value="2">★</span>
+                    <span data-value="3">★</span>
+                    <span data-value="4">★</span>
+                    <span data-value="5">★</span>
+               
     </div>
 </div>
                 <div class="menu-item"><img src="images/download (17).jpeg" alt="Fruit Tart"><p>Fruit Tart</p><span>$5.49</span><p class="description">Crispy pastry crust filled with fresh fruit and custard.</p>
                 <!-- Rating Section -->
-    <div class="rating" data-category="appetizers" data-item="Appetizer Name">
-        ★★★★★
+                <div class="rating" data-item-id="Fruit Tart">
+                    <span data-value="1">★</span>
+                    <span data-value="2">★</span>
+                    <span data-value="3">★</span>
+                    <span data-value="4">★</span>
+                    <span data-value="5">★</span>
+            
+                    
     </div>
 </div>
             </div>
@@ -194,8 +306,14 @@
                     <p>Confetti Pink Moscato - Bottle</p>
                     <span>$20.00</span>
                    <!-- Rating Section -->
-    <div class="rating" data-category="appetizers" data-item="Appetizer Name">
-        ★★★★★
+                   <div class="rating" data-item-id="Pink Moscato">
+                    <span data-value="1">★</span>
+                    <span data-value="2">★</span>
+                    <span data-value="3">★</span>
+                    <span data-value="4">★</span>
+                    <span data-value="5">★</span>
+               
+                    
     </div>
                 </div>
                 <div class="menu-item">
@@ -203,8 +321,13 @@
                     <p>Moscato Primo Amore - Bottle</p>
                     <span>$20.00</span>
                     <!-- Rating Section -->
-    <div class="rating" data-category="appetizers" data-item="Appetizer Name">
-        ★★★★★
+                    <div class="rating" data-item-id="White Wine">
+                        <span data-value="1">★</span>
+                        <span data-value="2">★</span>
+                        <span data-value="3">★</span>
+                        <span data-value="4">★</span>
+                        <span data-value="5">★</span>
+                     
     </div>
                 </div>
                 <div class="menu-item">
@@ -212,49 +335,83 @@
                     <p>Roscato Rosso Dolce - Bottle</p>
                     <span>$20.00</span>
                     <!-- Rating Section -->
-    <div class="rating" data-category="appetizers" data-item="Appetizer Name">
-        ★★★★★
-    </div>
-              </div>
+                    <div class="rating" data-item-id="Red Wine">
+                        <span data-value="1">★</span>
+                        <span data-value="2">★</span>
+                        <span data-value="3">★</span>
+                        <span data-value="4">★</span>
+                        <span data-value="5">★</span>
+                     
+                </div>
+                </div>
                 <div class="menu-item">
                     <img src="images/download (22).jpeg" alt="Bellini Peach Tea">
                     <p>Bellini Peach Tea</p>
                     <span>$4.29</span>
              <!-- Rating Section -->
-    <div class="rating" data-category="appetizers" data-item="Appetizer Name">
-        ★★★★★
-    </div>
+             <div class="rating" data-item-id="Bellini Peach Tea">
+                <span data-value="1">★</span>
+                <span data-value="2">★</span>
+                <span data-value="3">★</span>
+                <span data-value="4">★</span>
+                <span data-value="5">★</span>
+          
                </div>
+            </div>
                 <div class="menu-item">
                     <img src="images/download (23).jpeg" alt="Classic Lemonade">
                     <p>Classic Lemonade</p>
                     <span>$3.49</span>
                <!-- Rating Section -->
-    <div class="rating" data-category="appetizers" data-item="Appetizer Name">
-        ★★★★★
+               <div class="rating" data-item-id="Classic Lemonade">
+                <span data-value="1">★</span>
+                <span data-value="2">★</span>
+                <span data-value="3">★</span>
+                <span data-value="4">★</span>
+                <span data-value="5">★</span>
+              
+                
     </div>
          </div>
                 <div class="menu-item">
                     <img src="images/download (24).jpeg" alt="Iced Tea">
                     <p>Iced Tea</p>
                     <span>$3.49</span>
+                    <!-- Rating Section -->
+                    <div class="rating" data-item-id="Iced Tea">
+                        <span data-value="1">★</span>
+                        <span data-value="2">★</span>
+                        <span data-value="3">★</span>
+                        <span data-value="4">★</span>
+                        <span data-value="5">★</span>
+                    
                 </div>
+            </div>
                 <div class="menu-item">
                     <img src="images/download (25).jpeg" alt="Raspberry Lemonade">
                     <p>Raspberry Lemonade</p>
                     <span>$4.29</span>
                 <!-- Rating Section -->
-    <div class="rating" data-category="appetizers" data-item="Appetizer Name">
-        ★★★★★
-    </div>
+                <div class="rating" data-item-id="Raspberry Lemonade">
+                    <span data-value="1">★</span>
+                    <span data-value="2">★</span>
+                    <span data-value="3">★</span>
+                    <span data-value="4">★</span>
+                    <span data-value="5">★</span>
+                </div>
             </div>
                 <div class="menu-item">
                     <img src="images/download (26).jpeg" alt="Soft Drink">
                     <p>Soft Drink</p>
                     <span>$3.49</span>
                <!-- Rating Section -->
-    <div class="rating" data-category="appetizers" data-item="Appetizer Name">
-        ★★★★★
+               <div class="rating" data-item-id="Soft Drink">
+                <span data-value="1">★</span>
+                <span data-value="2">★</span>
+                <span data-value="3">★</span>
+                <span data-value="4">★</span>
+                <span data-value="5">★</span>
+                
     </div>
           </div>
                 <div class="menu-item no-thank-you">
@@ -308,5 +465,12 @@
             document.body.classList.remove("blur-active");
         }
         </script>
+        <!-- Rating Submission Popup -->
+<div id="ratingPopup" class="hidden">
+    <p>Submit your ratings?</p>
+    <button id="submitRatings">Submit</button>
+    <button id="closePopup">Cancel</button>
+</div>
+
 </body>
 </html>
